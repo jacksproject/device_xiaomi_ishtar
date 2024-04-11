@@ -10,16 +10,10 @@ DEVICE_PATH := device/xiaomi/ishtar
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
-    system \
-    system_ext \
     system_ext \
     product \
-    product \
-    vendor \
     vendor \
     vendor_dlkm \
-    vendor_dlkm \
-    odm \
     odm \
     boot \
     dtbo \

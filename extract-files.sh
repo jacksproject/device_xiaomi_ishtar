@@ -53,6 +53,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc | vendor/etc/init/hw/init.batterysecret.rc | vendor/etc/init/hw/init.mi_thermald.rc)
+            sed -i '/seclabel/d' "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

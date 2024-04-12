@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# NDK
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

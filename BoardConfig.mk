@@ -43,8 +43,13 @@ TARGET_BOOTLOADER_BOARD_NAME := kalama
 TARGET_NO_BOOTLOADER := true
 
 # HIDL
- DEVICE_MANIFEST_FILE += \
-     $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml
+DEVICE_MANIFEST_FILE += \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/framework_matrix_xiaomi.xml
+
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_xiaomi.xml
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 4

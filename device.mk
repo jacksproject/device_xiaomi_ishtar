@@ -150,6 +150,13 @@ NEED_AIDL_NDK_PLATFORM_BACKEND := true
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+     IshtarFrameworks \
+     IshtarSystemUI \
+     IshtarWifiRes \
+     IshtarWifiResTarget \
+     IshtarWifiResTarget_spf
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

@@ -181,6 +181,9 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 

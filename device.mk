@@ -152,6 +152,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     IshtarFrameworks \
+    IshtarSettings \
     IshtarSettingsProvider \
     IshtarSystemUI \
     IshtarWifiRes \

@@ -88,6 +88,14 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
+    libudfpshandler
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
@@ -237,6 +245,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.batterysecret.rc \
     init.mi_thermald.rc \
+    init.mi_udfps.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc

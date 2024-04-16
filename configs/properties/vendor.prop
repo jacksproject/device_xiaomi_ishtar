@@ -49,7 +49,6 @@ persist.sys.fuse.passthrough.enable=true
 ro.incremental.enable=yes
 
 # Media
-media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
@@ -59,7 +58,6 @@ media.stagefright.enable-scan=true
 ro.mediaserver.64b.enable=true
 
 # NFC
-ro.nfc.port=I2C
 ro.vendor.nfc.disable.i2c=false
 ro.vendor.nfc.dispatch_optim=1
 ro.vendor.nfc.wallet_fusion=1

@@ -15,7 +15,6 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # A/B
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -117,8 +116,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.ishtar \
-    android.hardware.health-service.ishtar_recovery \
+    android.hardware.health-service.xiaomi \
+    android.hardware.health-service.xiaomi_recovery \
     android.hardware.health@1.0.vendor \
     android.hardware.health@2.1.vendor
 

@@ -79,6 +79,9 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 # Platform
 TARGET_BOARD_PLATFORM := kalama
 
+# PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop

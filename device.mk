@@ -201,6 +201,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Perf
 PRODUCT_PACKAGES += \
     libpsi.vendor \
@@ -277,6 +281,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.batterysecret.rc \
     init.mi_thermald.rc \
+    init.mi_touch.rc \
     init.mi_udfps.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

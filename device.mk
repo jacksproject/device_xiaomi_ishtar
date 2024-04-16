@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
 
 # Identity
 PRODUCT_PACKAGES += \
-    android.hardware.identity-V3-ndk_platform.vendor
+    android.hardware.identity-V3-ndk.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -173,7 +173,7 @@ PRODUCT_COPY_FILES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks-V1-ndk_platform.vendor
+    android.hardware.neuralnetworks-V1-ndk.vendor
 
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true

@@ -288,7 +288,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.batterysecret.rc \
     init.mi_thermald.rc \
-    init.mi_touch.rc \
     init.mi_udfps.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

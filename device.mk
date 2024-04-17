@@ -7,9 +7,6 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -49,6 +46,9 @@ PRODUCT_COPY_FILES += \
  # Authsecret
 PRODUCT_PACKAGES += \
      android.hardware.authsecret@1.0.vendor
+
+# Board
+TARGET_BOARD_PLATFORM := kalama
 
 # Boot Control
 PRODUCT_PACKAGES += \
@@ -133,6 +133,9 @@ PRODUCT_COPY_FILES += \
 # Identity
 PRODUCT_PACKAGES += \
     android.hardware.identity-V3-ndk.vendor
+
+# Kernel Binary
+KERNEL_PREBUILT_DIR := device/xiaomi/ishtar-kernel
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -327,7 +330,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 31
+BOARD_API_LEVEL := 33
+BOARD_SHIPPING_API_LEVEL := 33
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

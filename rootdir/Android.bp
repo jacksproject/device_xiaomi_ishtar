@@ -6,18 +6,6 @@
 
 // Init scripts
 sh_binary {
-    name: "init.class_main.sh",
-    src: "bin/init.class_main.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.crda.sh",
-    src: "bin/init.crda.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot-kalama.sh",
     src: "bin/init.kernel.post_boot-kalama.sh",
     vendor: true,
@@ -30,32 +18,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.mdm.sh",
-    src: "bin/init.mdm.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.class_core.sh",
-    src: "bin/init.qcom.class_core.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.coex.sh",
-    src: "bin/init.qcom.coex.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.efs.sync.sh",
-    src: "bin/init.qcom.efs.sync.sh",
     vendor: true,
 }
 
@@ -66,26 +30,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.sdio.sh",
-    src: "bin/init.qcom.sdio.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.sensors.sh",
     src: "bin/init.qcom.sensors.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.usb.sh",
-    src: "bin/init.qcom.usb.sh",
     vendor: true,
 }
 
@@ -120,12 +66,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel.sh",
-    src: "bin/init.qti.kernel.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qti.media.sh",
     src: "bin/init.qti.media.sh",
     vendor: true,
@@ -138,32 +78,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.write.sh",
-    src: "bin/init.qti.write.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "qca6234-service.sh",
-    src: "bin/qca6234-service.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "system_dlkm_modprobe.sh",
-    src: "bin/system_dlkm_modprobe.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "vendor.qti.diag.sh",
     src: "bin/vendor.qti.diag.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "vendor_modprobe.sh",
-    src: "bin/vendor_modprobe.sh",
     vendor: true,
 }
 
@@ -184,24 +100,10 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "init.mi_udfps.rc",
-    src: "init.mi_udfps.rc",
+    src: "etc/init.mi_udfps.rc",
     sub_dir: "init/hw",
     vendor: true,
  }
-
-prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "etc/init.qcom.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.usb.rc",
-    src: "etc/init.qcom.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
 
 prebuilt_etc {
     name: "init.target.rc",
